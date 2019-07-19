@@ -38,13 +38,7 @@ crypto_price_array.map! do |crypto|
 end
 #print crypto_price_array
 
-array = []
-crypto_names_array.each do |crypto|
-  crypto_price_array.each do |price|
-    hash = Hash.new
-    hash[:crypto] = price
-  end
-end
+
 
 array = []
 hash = Hash.new
@@ -56,7 +50,7 @@ end
 
 print array
 
-# Alternative à ma 
+# Alternative à ma
 #for i in (0..crypto_names.length) do
 #  crypto_couple_hash = {(crypto_names[i].to_s) => ((crypto_price[i].to_s)[1..-1].to_f)}
 #  puts "Mining crypto currencie #{crypto_couple_hash} now..."
